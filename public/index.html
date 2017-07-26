@@ -2,28 +2,28 @@
 <html>
     <head>
         <title>BF Editor</title>
-        
+
         <script src="builds/bfe.min.js"></script>
         <link href="builds/bfe.min.css" rel="stylesheet" />
-        
+
         <script type="text/javascript">
             function myCB(jsonld) {
                 var humanized = bfeditor.bfestore.store2text();
                 document.body.scrollTop = document.documentElement.scrollTop = 0;
                 document.getElementById("bfeditor").innerHTML = '<div class="row"><div class="col-md-12 text-right"><a href="index.html"><button type="button" class="btn btn-default btn-lg">Start Over</button></a></div></div><h1>Simple HTML View</h1><pre>' + humanized + '</pre><br /><h1>JSONLD-Expanded</h1><pre>' + JSON.stringify(jsonld, undefined, " ") + '</pre>';
             }
-            
+
             var config = {
                 "baseURI": "http://example.org/",
                 "profiles": [
-                    "/static/profiles/bibframe/Agents.json",
-                    "/static/profiles/bibframe/Annotations.json",
-                    "/static/profiles/bibframe/Authorities.json",
-                    "/static/profiles/bibframe/Entities.json",
-                    "/static/profiles/bibframe/WIA.json",
-                    "/static/profiles/bibframe/WIA-monograph-simple.json",
-                    "/static/profiles/bibframe/cul/WEI-serial.json",
-                    "/static/profiles/bibframe/cul/WEI-serial_NASIG_CONSER.json",
+                    "/profiles/bibframe/Agents.json",
+                    "/profiles/bibframe/Annotations.json",
+                    "/profiles/bibframe/Authorities.json",
+                    "/profiles/bibframe/Entities.json",
+                    "/profiles/bibframe/WIA.json",
+                    "/profiles/bibframe/WIA-monograph-simple.json",
+                    "/profiles/bibframe/cul/WEI-serial.json",
+                    "/profiles/bibframe/cul/WEI-serial_NASIG_CONSER.json",
 
                 ],
                 "startingPoints": [
@@ -31,19 +31,19 @@
                         "menuGroup": "BIBFRAME - Kitchen Sink Profiles",
                         "menuItems": [
                             {
-                                label: "New HeldItem", 
+                                label: "New HeldItem",
                                 useResourceTemplates: [ "profile:bf:HeldItem" ]
                             },
                             {
-                                label: "New Instance", 
+                                label: "New Instance",
                                 useResourceTemplates: [ "profile:bf:Instance" ]
                             },
                             {
-                                label: "New Work", 
+                                label: "New Work",
                                 useResourceTemplates: [ "profile:bf:Work" ]
                             },
                             {
-                                label: "New Work, Instance, & HeldItem", 
+                                label: "New Work, Instance, & HeldItem",
                                 useResourceTemplates: [ "profile:bf:Work", "profile:bf:Instance", "profile:bf:HeldItem" ]
                             },
                         ]
@@ -52,19 +52,19 @@
                         "menuGroup": "BIBFRAME - Simple Monograph",
                         "menuItems": [
                             {
-                                label: "Add holding", 
+                                label: "Add holding",
                                 useResourceTemplates: [ "profile:bf:HeldItem:Monograph" ]
                             },
                             {
-                                label: "Catalog manifestation", 
+                                label: "Catalog manifestation",
                                 useResourceTemplates: [ "profile:bf:Instance:Monograph" ]
                             },
                             {
-                                label: "New work", 
+                                label: "New work",
                                 useResourceTemplates: [ "profile:bf:Work:Monograph" ]
                             },
                             {
-                                label: "New monograph (New Work, Instance, and Holding)", 
+                                label: "New monograph (New Work, Instance, and Holding)",
                                 useResourceTemplates: [ "profile:bf:Work:Monograph", "profile:bf:Instance:Monograph", "profile:bf:HeldItem:Monograph" ]
                             },
                         ]
@@ -73,11 +73,11 @@
                         "menuGroup": "BIBFRAME - Simple Serial",
                         "menuItems": [
                             {
-                                label: "New Serial (New Work, Instance, and Holding)", 
+                                label: "New Serial (New Work, Instance, and Holding)",
                                 useResourceTemplates: [ "profile:bf:Work:Serial", "profile:bf:Instance:Serial", "profile:bf:HeldItem:Serial" ]
                             },
                             {
-                                label: "New CONSER Serial (New Work, Instance, and Holding with CONSER elements)", 
+                                label: "New CONSER Serial (New Work, Instance, and Holding with CONSER elements)",
                                 useResourceTemplates: [ "profile:bf:Work:CONSERSerial", "profile:bf:Instance:CONSERSerial", "profile:bf:HeldItem:CONSERSerial" ]
                             }
                         ]
@@ -90,17 +90,17 @@
             }
 
         </script>
-        
+
     </head>
     <body>
-    
+
     <div class="container">
       <div id="bfeditor" />
     </div>
-    
+
     <script type="text/javascript">
         var bfeditor = bfe.fulleditor(config, "bfeditor");
     </script>
-    
+
     </body>
 </html>
