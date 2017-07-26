@@ -4,9 +4,13 @@ require "capistrano/setup"
 # Include default deployment tasks
 require "capistrano/deploy"
 
-# Load the SCM plugin appropriate to your project:
+# Load the SCM plugin appropriate to your project
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
+
+# Loading git plugin to add configured submodules to release
+require "capistrano/scm/git-with-submodules"
+install_plugin Capistrano::SCM::Git::WithSubmodules
 
 # Include tasks from other gems included in your Gemfile
 #
