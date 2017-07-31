@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.8.2"
+lock "3.6.1"
 
 set :department, 'bib'
 set :application, 'bibframe'
@@ -14,6 +14,8 @@ set :deploy_to, "/opt/www/#{fetch(:department)}/#{fetch(:deploy_name)}"
 
 # Default branch is :master
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+
+set :git_strategy, Capistrano::Git::SubmoduleStrategy
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
