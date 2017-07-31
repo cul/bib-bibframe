@@ -4,7 +4,7 @@ lock "3.8.2"
 set :department, 'bib'
 set :application, 'bibframe'
 
-set :repo_name, "#{fetch(:department)}-#{fetch(:application}"
+set :repo_name, "#{fetch(:department)}-#{fetch(:application)}"
 set :repo_url,  "git@github.com:cul/#{fetch(:repo_name)}.git"
 
 set :remote_user, "#{fetch(:department)}serv"
