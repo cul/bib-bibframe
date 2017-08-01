@@ -16,7 +16,8 @@ This the site content is at `/public`.
 
    `git clone --recursive git@github.com:cul/bib-bibframe.git`
 2. Install ruby
-   Deploy was tested with `ruby 3.3.3`.
+
+   _Deploy was tested with `ruby 3.3.3`._
 3. Install bundler
 
    `gem install bundler`
@@ -28,7 +29,7 @@ This the site content is at `/public`.
 5. Deploy
    
    `cap {environment} deploy`
-   You will be prompted for a branch, by default deploys the branch local repository is pointing at.
+   _Note: You will be prompted for a branch, by default deploys the branch local repository is pointing at._
 
 ## Making changes to repository
 1. Make the changes locally commit them to a branch, push to the remote repository.
