@@ -5,10 +5,15 @@ This repo contains a local installation of `bfe`, customized for use at the Colu
 This the site content is at `/public`.
 
 `/public`   - contains all the js/css/html files necessary for the site
+
 `/bfe`      - git submodule which contains the bfe source code used
+
 `/lib`      - could include Capistrano tasks, if necessary
+
 `/config/*` - Capistrano configuration
+
 `/Capfile`  - list all the Capistrano requirements
+
 `/Gemfile*` - Gemfile and Gemfile.lock for use with Bundler
 
 ## Deploying
