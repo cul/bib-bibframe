@@ -261,13 +261,11 @@
           {
             "mandatory": "false",
             "repeatable": "true",
-            "type": "resource",
+            "type": "literal",
             "resourceTemplates": [],
             "valueConstraint": {
               "valueTemplateRefs": [],
-              "useValuesFrom": [
-                "http://id.loc.gov/ml38281/vocabulary/issuance"
-              ],
+              "useValuesFrom": [],
               "valueDataType": {}
             },
             "propertyURI": "http://bibframe.org/vocab/modeOfIssuance",
@@ -734,7 +732,7 @@
         ],
         "resourceLabel": "RDA Work Elements - Serial",
         "resourceURI": "http://bibframe.org/vocab/Text"
-      },   
+      },
       {
         "id": "profile:bf:HeldItem:CONSERSerial",
         "propertyTemplates": [
