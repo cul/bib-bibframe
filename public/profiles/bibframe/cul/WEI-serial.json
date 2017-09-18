@@ -108,7 +108,7 @@
             "propertyLabel": "Place of Origin of the Work (RDA 6.5)",
             "propertyURI": "http://bibframe.org/vocab/originPlace",
             "resourceTemplates": [],
-            "type": "resource",
+            "type": "literal",
             "valueConstraint": {
               "valueTemplateRefs": [],
               "useValuesFrom": [],

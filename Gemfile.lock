@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/ekho/capistrano-git-submodule-strategy.git
+  remote: https://github.com/ekho/capistrano-git-submodule-strategy.git
   revision: 559f6b08992027b2380a54b1b4b4cf55a3f10680
   specs:
     capistrano-git-submodule-strategy (0.1.23)
@@ -34,4 +34,4 @@ DEPENDENCIES
   capistrano-git-submodule-strategy (~> 0.1)!
 
 BUNDLED WITH
-   1.13.7
+   1.15.4
