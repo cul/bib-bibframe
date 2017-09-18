@@ -110,9 +110,7 @@
             "resourceTemplates": [],
             "type": "resource",
             "valueConstraint": {
-              "valueTemplateRefs": [
-                "profile:bf:Place:NotatedMusic"
-              ],
+              "valueTemplateRefs": [],
               "useValuesFrom": [],
               "valueDataType": {}
             },
